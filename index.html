@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col offset-lg-4"><input class="form-control-lg float-left" type="text"><button class="btn btn-primary" type="button" id="search">Show me the facts</button></div>
+                <div class="col offset-lg-4"><input class="form-control-lg float-left" id="location" type="text"><button class="btn btn-primary" type="button" id="search">Show me the facts</button></div>
             </div>
         </div>
     </div>
@@ -128,6 +128,8 @@
                     <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
                 </div>
                 <p class="copyright">Company Name © 2017</p>
+                <button class="button" id="firebaseLike">Like us!</button>
+                <h1><span id="click-value"></span> People Liked Us</h1>
             </div>
         </footer>
     </div>
@@ -136,6 +138,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
     <script type="text/javascript" src="app.js"></script>
 </body>
 
