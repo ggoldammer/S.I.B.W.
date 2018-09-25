@@ -42,7 +42,12 @@ $("#search").on("click", function () {
   var clickCounter = 0;
 
   $("#firebaseLike").on("click", function(){
-    clickCounter++;
+    if (!$(this).hasClass("disabled")){
+      clickCounter++;
+      $(this).addClass("disabled")
+    }
+    
+
 
     database.ref().set({
       clickCount: clickCounter
