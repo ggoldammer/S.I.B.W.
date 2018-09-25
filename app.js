@@ -47,8 +47,6 @@ $("#search").on("click", function () {
       $(this).addClass("disabled")
     }
     
-
-
     database.ref().set({
       clickCount: clickCounter
     });
