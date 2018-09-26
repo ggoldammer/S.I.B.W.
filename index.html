@@ -27,7 +27,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col offset-lg-4"><input class="form-control-lg float-left" id="location" type="text"><button class="btn btn-primary" type="button" id="search">Show me the facts</button></div>
+                <div class="col offset-lg-4">
+                    <input class="form-control-lg float-left" id="location" type="text">
+                    <button class="btn btn-primary" type="button" id="search">Show me the facts</button>
+                    </div>
             </div>
         </div>
     </div>
@@ -38,8 +41,11 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="card-title">Weather</h4>
-                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><a class="card-link" href="#">Link</a><a class="card-link"
-                                href="#">Link</a></div>
+                            <p class="card-text">City: <span id="nameHere"></span></p>
+                            <p class="card-text">Temperature: <span id="tempHere"></span></p>
+                            <p class="card-text">Humidity: <span id="humidityHere"></span></p>
+                            <p class="card-text">Pressure: <span id="pressureHere"></span></p>
+                        </div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
@@ -50,96 +56,101 @@
                             <!-- <h6 class="text-muted card-subtitle mb-2"></h6> -->
                             <!-- <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><a class="card-link" href="#">Link</a><a class="card-link"
                                 href="#">Link</a></div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="team-grid">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Team </h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet.&nbsp; </p>
-            </div>
-            <div class="row people">
-                <div class="col-md-4 col-lg-3 item">
-                    <div class="box" style="background-image:url(assets/img/olga.jpg)">
-                        <div class="cover">
-                            <h3 class="name">Olga</h3>
-                            <p class="title"></p>
-                            <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 item">
-                    <div class="box" style="background-image:url(assets/img/Gabriel.jpg)">
-                        <div class="cover">
-                            <h3 class="name">Gabriel</h3>
-                            <p class="title"></p>
-                            <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 item">
-                    <div class="box" style="background-image:url(assets/img/Trent.jpg)">
-                        <div class="cover">
-                            <h3 class="name">Trent</h3>
-                            <p class="title"></p>
-                            <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 item">
-                    <div class="box" style="background-image: url(&quot;assets/img/sergio.jpg&quot;);">
-                        <div class="cover">
-                            <h3 class="name">Sergio</h3>
-                            <p class="title"></p>
-                            <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer-dark">
-        <footer>
+        <div class="team-grid">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Company Name</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                    </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                <div class="intro">
+                    <h2 class="text-center">Team </h2>
+                    <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum
+                        nibh erat, pellentesque ut laoreet.&nbsp; </p>
                 </div>
-                <p class="copyright">Company Name © 2017</p>
-                <button class="button" id="firebaseLike">Like us!</button>
-                <h1><span id="click-value"></span> People Liked Us</h1>
+                <div class="row people">
+                    <div class="col-md-4 col-lg-3 item">
+                        <div class="box" style="background-image:url(assets/img/olga.jpg)">
+                            <div class="cover">
+                                <h3 class="name">Olga</h3>
+                                <p class="title"></p>
+                                <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 item">
+                        <div class="box" style="background-image:url(assets/img/Gabriel.jpg)">
+                            <div class="cover">
+                                <h3 class="name">Gabriel</h3>
+                                <p class="title"></p>
+                                <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 item">
+                        <div class="box" style="background-image:url(assets/img/Trent.jpg)">
+                            <div class="cover">
+                                <h3 class="name">Trent</h3>
+                                <p class="title"></p>
+                                <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 item">
+                        <div class="box" style="background-image: url(&quot;assets/img/sergio.jpg&quot;);">
+                            <div class="cover">
+                                <h3 class="name">Sergio</h3>
+                                <p class="title"></p>
+                                <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </div>
-    <footer></footer>
-    <footer></footer>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+        </div>
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Web design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Hosting</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>Company Name</h3>
+                            <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut
+                                vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit
+                                pulvinar dictum vel in justo.</p>
+                        </div>
+                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+                                    class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
+                                href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    </div>
+                    <p class="copyright">Company Name © 2017</p>
+                    <button class="button" id="firebaseLike">Like us!</button>
+                    <h1><span id="click-value"></span> People Liked Us</h1>
+                </div>
+            </footer>
+        </div>
+        <footer></footer>
+        <footer></footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+        <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
