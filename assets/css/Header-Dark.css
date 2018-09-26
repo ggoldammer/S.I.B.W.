@@ -1,7 +1,7 @@
 .header-dark {
-  background: url(../../assets/img/lightning.jpg) #444;
+  background: url(../../assets/img/tornado.jpg) #444;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-attachment: fixed;
   padding-bottom: 80px;
 }

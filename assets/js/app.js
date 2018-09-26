@@ -20,12 +20,21 @@ $("#search").on("click", function () {
     for (i = 0; i < response.length; i++) {
       console.log(response[i].url);
       var div = $("<div>");
+      var h3 = $("<h3>");
       var a = $("<a>");
+      var bttn = $("<button>");
+      div.addClass("row");
+      bttn.text("Read More");
+      bttn.attr("href", response[i].url);
+      bttn.addClass("btn btn-primary col-md-3");
       a.attr("href", response[i].url);
       a.attr("target", '_blank');
       a.text(response[i].title);
-      div.append(a);
-      $("#news-appear-here").append(a);
+      h3.append(a);
+      h3.addClass("col-md-9");
+      div.append(h3);
+      div.append(bttn);
+      $("#news-appear-here").append(div);
     }
   });
 
