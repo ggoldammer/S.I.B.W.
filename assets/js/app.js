@@ -1,5 +1,5 @@
-$("#search").on("click", function () {
-
+$("#search").on("click", function (e) {
+  e.preventDefault();
 
   // var location = "+location:florida";
   // var queryURL = "https://webhose.io/filterWebContent?token=fde323c7-bec1-4079-9a0a-70e7d9f77f00&format=json&q=published:>1537426800000+language:english+thread.section_title:weather+thread.section_title:hurricane";
@@ -21,19 +21,22 @@ $("#search").on("click", function () {
       console.log(response[i].url);
       var div = $("<div>");
       var h3 = $("<h3>");
+      var img = $("<img>");
+      var imgLink = $("<a>");
       var a = $("<a>");
-      var bttn = $("<button>");
-      div.addClass("row");
-      bttn.text("Read More");
-      bttn.attr("href", response[i].url);
-      bttn.addClass("btn btn-primary col-md-3");
+      div.addClass("row m-3");
+      img.attr("src", response[i].elements[0].url);
       a.attr("href", response[i].url);
       a.attr("target", '_blank');
       a.text(response[i].title);
       h3.append(a);
-      h3.addClass("col-md-9");
+      h3.addClass("col-md-9 align-middle");
+      img.addClass("img-150");
+      imgLink.addClass("col-md-3");
+      imgLink.attr("href", response[i].url);
+      imgLink.append(img);
+      div.append(imgLink);
       div.append(h3);
-      div.append(bttn);
       $("#news-appear-here").append(div);
     }
   });
@@ -49,9 +52,12 @@ $("#search").on("click", function () {
 
   }).then(function (response) {
     console.log(response);
-
+    $("#weather-icon").empty();
+    var icon = $("<img>")
+    icon.attr("src", "http://openweathermap.org/img/w/" + response.weather[0].icon +".png");
+    $("#weather-icon").append(icon);
     $("#nameHere").text(response.name);
-    $("#tempHere").text(response.main.temp);
+    $("#tempHere").text(Math.floor(response.main.temp) + "°F");
     $("#humidityHere").text(response.main.humidity);
     $("#pressureHere").text(response.main.pressure);
   })

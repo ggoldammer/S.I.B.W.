@@ -7,13 +7,13 @@
     <title>Project1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
     <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="assets/css/Header-Dark.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/Team-Grid.css">
-
-
 </head>
 
 <body>
@@ -29,8 +29,13 @@
         </div>
         <div>
             <div class="mx-auto text-center">
-                <div><input class="form-control-lg mx-2" type="text" placeholder="Your City" id="location" required><input class="form-control-lg m-2" type="text" placeholder="Your ZIP" required><button class="btn btn-primary align-top m-2" type="button" id="search">Show
-                        me the facts</button></div>
+                <div>
+                    <form>
+                        <input class="form-control-lg mx-2" type="text" placeholder="Your City" id="location" required>
+                        <button class="btn btn-primary align-top" type="submit" id="search">Show
+                            me the facts</button>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -39,21 +44,23 @@
     <section class="container">
         <div class="row">
             <div class="col-md-4">
-                <div class="card">
+                <div class="card my-2">
                     <div class="card-body">
                         <h4 class="card-title">Weather</h4>
                         <div class="row">
-                            <div id="weather-icon" class="col-md-3 text-center"><i class="fas fa-moon"></i></div>
-                            <div id="weather-info" class="col-md-9">
-                                <h3 id="weather-temp" class="text-center">56 F</h3>
-                                <p class="text-center">Weather Info goes here</p>
+                            <div id="weather-icon" class="col-md-3 text-center"></div>
+                            <div id="weather-info" class="col-md-9 text-center">
+                                <h3 id="tempHere"><span id="tempHere"></span> F</h3>
+                                <p>Location Name: <span id="nameHere"></span></p>
+                                <p>Humidity: <span id="humidityHere"></span></p>
+                                <p>Pressure: <span id="pressureHere"></span></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="card">
+                <div class="card my-2">
                     <div class="card-body">
                         <h4 class="card-title">News</h4>
                         <div id="news-appear-here"></div>
@@ -67,9 +74,7 @@
     <section class="team-grid">
         <div class="container">
             <div class="intro">
-                <h2 class="text-center">Team </h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum
-                    nibh erat, pellentesque ut laoreet.&nbsp; </p>
+                <h2 class="text-center">The Team</h2>
             </div>
             <div class="row people">
                 <div class="col-md-4 col-lg-3 item">
@@ -77,7 +82,8 @@
                         <div class="cover">
                             <h3 class="name">Olga</h3>
                             <p class="title"></p>
-                            <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+                            <div class="social"><a href="#"></a><a href="https://github.com/olevina" target="_blank"><i
+                                        class="fab fa-github"></i></a><a href="#"></a></div>
                         </div>
                     </div>
                 </div>
@@ -86,7 +92,8 @@
                         <div class="cover">
                             <h3 class="name">Gabriel</h3>
                             <p class="title"></p>
-                            <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+                            <div class="social"><a href="#"></a><a href="https://github.com/ggoldammer" target="_blank"><i
+                                        class="fab fa-github"></i></a><a href="#"></a></div>
                         </div>
                     </div>
                 </div>
@@ -95,7 +102,8 @@
                         <div class="cover">
                             <h3 class="name">Trent</h3>
                             <p class="title"></p>
-                            <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+                            <div class="social"><a href="#"></a><a href="https://github.com/tgmagill" target="_blank"><i
+                                        class="fab fa-github"></i></a><a href="#"></a></div>
                         </div>
                     </div>
                 </div>
@@ -104,7 +112,8 @@
                         <div class="cover">
                             <h3 class="name">Sergio</h3>
                             <p class="title"></p>
-                            <div class="social"><a href="#"></a><a href="#"></a><a href="#"></a></div>
+                            <div class="social"><a href="#"></a><a href="https://github.com/SergioT94" target="_blank"><i
+                                        class="fab fa-github"></i></a><a href="#"></a></div>
                         </div>
                     </div>
                 </div>
@@ -113,40 +122,24 @@
     </section>
 
     <footer class="footer-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Company Name</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut
-                            vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit
-                            pulvinar dictum vel in justo.</p>
-                    </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
-                                class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a
-                            href="#"><i class="icon ion-social-instagram"></i></a></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Like us!</h3>
+                    <button id="firebaseLike"><span id="click-value"></span> People Liked Us</button>
                 </div>
-                <p class="copyright">Should I Be Worried © 2018</p>
+                <div class="col-md-6 item text text-center">
+                    <h3>About the team</h3>
+                    <p>We're a small group with crazy ideas. Our tools for the job are our education, dedication, and
+                        perspiration.</p>
+                </div>
             </div>
-        </footer>
+            <p class="copyright">Should I Be Worried © 2018</p>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 
