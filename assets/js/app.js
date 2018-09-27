@@ -78,10 +78,10 @@ var database = firebase.database();
 var clickCounter = 0;
 
 $("#firebaseLike").on("click", function () {
-  if (!$(this).hasClass("disabled")) {
-    clickCounter++;
-    $(this).addClass("disabled")
-  }
+  clickCounter++;
+  $(this).hide();
+  var newText = $("<h3>Thank You!</h3>")
+  $("#newText").append(newText);
 
   database.ref().set({
     clickCount: clickCounter
