@@ -43,7 +43,7 @@ $("#search").on("click", function (e) {
 
   // api.openweathermap.org/data/2.5/weather?q=London
   var userWeatherCity = $("#location").val().trim();
-  var queryURL = "http://api.openweathermap.org/data/2.5/weather?id=524901&APPID=2ece379be43a1466dd625e136e146032&q=" + userWeatherCity + "&units=imperial";
+  var queryURL = "https://api.openweathermap.org/data/2.5/weather?id=524901&APPID=2ece379be43a1466dd625e136e146032&q=" + userWeatherCity + "&units=imperial";
   // https://api.openweathermap.org/data/2.5/weather?zip=,us&appid=fd6e725758c4ad90e02e45e3b42c4654
   $("#location").val("");
   $.ajax({
