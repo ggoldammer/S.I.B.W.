@@ -26,7 +26,7 @@ The goal in the initial creation of this app is to have a working prototype of t
 
 Potential improvements involve quality of life features, as well as adding additional information that would assist someone in the event of a natural disaster. These items include but are not limited to:
 
--Displaying traffic patterns (flight status, closed roads & highways, suggested evacuation routes)
--Displaying shelter information (missing persons locations, shelters, food banks)
--Giving the user the ability to recieve SMS notifications in the event of network outages
--and more!
+- Displaying traffic patterns (flight status, closed roads & highways, suggested evacuation routes)
+- Displaying shelter information (missing persons locations, shelters, food banks)
+- Giving the user the ability to recieve SMS notifications in the event of network outages
+- and more!
