@@ -4,6 +4,8 @@
 
 'Should I Be Worried?' or S.I.B.W. aims to be a baseline application that retrieves and displays vital information to the user in the case of a natural disaster.
 
+This was the first group project for the University of Arizona Coding Bootcamp.
+
 ## Solution
 
 The goal in the initial creation of this app is to have a working prototype of the concept. In this project we were able to establish the use of two API's. These API's were OpenWeather and NewsRiver. Both of these API's accepted the city location in their search query, which allowed us to filter the necessary information based on the user's city.
