@@ -12,15 +12,15 @@ The goal in the initial creation of this app is to have a working prototype of t
 
 ## Technologies Used
 
--Hypertext Markup Language (HTML)
--Cascading Style Sheets (CSS)
--Boostrap (CSS Library)
--JavaScript (Programming Language)
--jQuery (JavaScript Library)
--Google Firebase (Database)
--FontAwesome (Icon Library)
--OpenWeatherMap (Weather API: https://openweathermap.org/api)
--NewsRiver (News API: https://newsriver.io/)
+- Hypertext Markup Language (HTML)
+- Cascading Style Sheets (CSS)
+- Boostrap (CSS Library)
+- JavaScript (Programming Language)
+- jQuery (JavaScript Library)
+- Google Firebase (Database)
+- FontAwesome (Icon Library)
+- OpenWeatherMap (Weather API: https://openweathermap.org/api)
+- NewsRiver (News API: https://newsriver.io/)
 
 ## Scale & Future Improvements
 
