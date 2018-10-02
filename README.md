@@ -8,7 +8,19 @@ This was the first group project for the University of Arizona Coding Bootcamp.
 
 ## Solution
 
-The goal in the initial creation of this app is to have a working prototype of the concept. In this project we were able to establish the use of two API's. These API's were OpenWeather and NewsRiver. Both of these API's accepted the city location in their search query, which allowed us to filter the necessary information based on the user's city.
+The goal in the initial creation of this app is to have a working prototype of the concept. In this project we were able to establish the use of two API's. These API's were OpenWeatherMap and NewsRiver. Both of these API's accepted the city location in their search query, which allowed us to filter the necessary information based on the user's city.
+
+## Technologies Used
+
+-Hypertext Markup Language (HTML)
+-Cascading Style Sheets (CSS)
+-Boostrap (CSS Library)
+-JavaScript (Programming Language)
+-jQuery (JavaScript Library)
+-Google Firebase (Database)
+-FontAwesome (Icon Library)
+-OpenWeatherMap (Weather API: https://openweathermap.org/api)
+-NewsRiver (News API: https://newsriver.io/)
 
 ## Scale & Future Improvements
 
