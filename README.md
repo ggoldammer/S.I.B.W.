@@ -6,6 +6,8 @@
 
 This was the first group project for the University of Arizona Coding Bootcamp.
 
+View Here: https://ggoldammer.github.io/S.I.B.W./
+
 ## Solution
 
 The goal in the initial creation of this app is to have a working prototype of the concept. In this project we were able to establish the use of two API's. These API's were OpenWeatherMap and NewsRiver. Both of these API's accepted the city location in their search query, which allowed us to filter the necessary information based on the user's city.
